@@ -1,7 +1,8 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
 import Item from "../item"
-// import "./styles.css";
+import "../assets/css/Slider.css"
+import lawyer from "../assets/images/lawyer.svg"
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -11,18 +12,92 @@ const breakPoints = [
 ];
 
 const Slider = () => {
+    const reviewData = [
+        {
+            image: lawyer,
+            name: "Sh.Ajeet Kumar",
+            destination: "District & Sessions Judge",
+            review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptates amet facilis error expedita deleniti? Voluptatibus, aspernatur. Veniam placeat eos officia nihil beatae totam possimus ex enim obcaeca"
+        },
+
+        {
+            image: lawyer,
+            name: "Sh.Ajeet Kumar",
+            destination: "District & Sessions Judge",
+            review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptates amet facilis error expedita deleniti? Voluptatibus, aspernatur. Veniam placeat eos officia nihil beatae totam possimus ex enim obcaeca"
+        },
+
+        {
+            image: lawyer,
+            name: "Sh.Ajeet Kumar",
+            destination: "District & Sessions Judge",
+            review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptates amet facilis error expedita deleniti? Voluptatibus, aspernatur. Veniam placeat eos officia nihil beatae totam possimus ex enim obcaeca"
+        },
+
+        {
+            image: lawyer,
+            name: "Sh.Ajeet Kumar",
+            destination: "District & Sessions Judge",
+            review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptates amet facilis error expedita deleniti? Voluptatibus, aspernatur. Veniam placeat eos officia nihil beatae totam possimus ex enim obcaeca"
+        },
+
+        {
+            image: lawyer,
+            name: "Sh.Ajeet Kumar",
+            destination: "District & Sessions Judge",
+            review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptates amet facilis error expedita deleniti? Voluptatibus, aspernatur. Veniam placeat eos officia nihil beatae totam possimus ex enim obcaeca"
+        },
+
+        {
+            image: lawyer,
+            name: "Sh.Ajeet Kumar",
+            destination: "District & Sessions Judge",
+            review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptates amet facilis error expedita deleniti? Voluptatibus, aspernatur. Veniam placeat eos officia nihil beatae totam possimus ex enim obcaeca"
+        },
+
+        {
+            image: lawyer,
+            name: "Sh.Ajeet Kumar",
+            destination: "District & Sessions Judge",
+            review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptates amet facilis error expedita deleniti? Voluptatibus, aspernatur. Veniam placeat eos officia nihil beatae totam possimus ex enim obcaeca"
+        },
+
+        {
+            image: lawyer,
+            name: "Sh.Ajeet Kumar",
+            destination: "District & Sessions Judge",
+            review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptates amet facilis error expedita deleniti? Voluptatibus, aspernatur. Veniam placeat eos officia nihil beatae totam possimus ex enim obcaeca"
+        },
+    ];
+
     return (
         <>
             <div className="App">
                 <Carousel breakPoints={breakPoints}>
-                    <Item>Quote One</Item>
-                    <Item>Quote Two</Item>
-                    <Item>Quote Three</Item>
-                    <Item>Quote Four</Item>
-                    <Item>Quote Five</Item>
-                    <Item>Quote Six</Item>
-                    <Item>Quote Seven</Item>
-                    <Item>Quote Eight</Item>
+                    {
+                        reviewData.map((val) => {
+                            return (
+                                <Item>
+                                    <div>
+                                        <div className="flexSlide">
+                                            <img src={val.image} alt="review" className="sliderImage" />
+                                            <div>
+                                                <span><h4>{val.name}</h4></span>
+                                                <div>{val.destination}</div>
+                                                <i className="fa-solid fa-star star"></i>
+                                                <i className="fa-solid fa-star star"></i>
+                                                <i className="fa-solid fa-star star"></i>
+                                                <i className="fa-solid fa-star star"></i>
+                                                <i className="fa-solid fa-star star"></i>
+                                            </div>
+                                        </div>
+                                        <div>{val.review}</div>
+
+                                    </div>
+                                </Item>
+                            )
+                        })
+                    }
                 </Carousel>
             </div>
         </>

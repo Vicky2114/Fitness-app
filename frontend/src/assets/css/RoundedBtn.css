@@ -1,0 +1,24 @@
+.roundedBtnBlur{
+    background-color: #F8C095;
+    border: 2px solid #F8C095;
+    border-radius: 32px;
+    padding: 16px;
+}
+
+.roundedBtnFocused{
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 32px;
+    padding: 16px;
+} 
+
+.roundedBtn :active{
+    opacity: 0.5;
+}
+
+.btnText{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}

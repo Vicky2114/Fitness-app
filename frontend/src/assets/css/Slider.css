@@ -1,0 +1,13 @@
+.sliderImage{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.flexSlide{
+    display: flex;
+}
+
+.star{
+    color: rgb(235, 235, 81);
+}

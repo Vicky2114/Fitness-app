@@ -1,0 +1,42 @@
+.sInAsMainContainer{
+    background: #F2F4F5;
+    width: 100vw;
+}
+
+.sInAsHeading{
+    text-align: center;
+    padding: 10vh 0;
+}
+
+.signInAsContainer{
+    width: 20rem;
+    height: 20rem;
+    background-color: #F8C095;
+    padding: 20px;
+    text-align: center;
+}
+
+.sInAsImg{
+    height: 10rem;
+    width: 10rem;
+}
+
+.sInAs{
+    color: white;
+    margin: 20%;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+.btnContainer{
+    margin: 4vh;
+    margin-bottom: 9.5vh;
+}
+
+.flexContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

@@ -1,10 +1,12 @@
 .navbar {
   background-color: #f8c09588 !important;
+  /* background-color:  #F8C095 !important; */
   font-size: 20px;
 }
 
 .nav-link:focus {
   color: #ce7836;
+  /* color: #fff; */
 }
 
 .am {
